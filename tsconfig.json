@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "types": ["vite/client"],
+    "jsx":"react-jsx",
     "target": "ESNext",
     "module": "commonjs",
     "allowJs": true,
@@ -8,8 +10,12 @@
     "noImplicitAny": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "outDir": "dist",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true
   }
+  
 }
